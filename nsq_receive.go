@@ -22,11 +22,6 @@ func (this *NSQHandlerB) HandleMessage(message *nsq.Message) error {
 	return nil
 }
 
-// func (this *NSQHandler) HandleMessage(message *nsq.Message) error {
-// 	log.Println("recv b:", string(message.Body))
-// 	return nil
-// }
-
 func main() {
 	waiter := sync.WaitGroup{}
 	waiter.Add(2)
